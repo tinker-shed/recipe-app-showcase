@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "notes": "Fixed tag list for the AI catalogue, agreed with the user on 25 October 2026. The AI may choose only these tags, at most 5 per recipe. Tags never name ingredients, cuisines, categories or websites. Aliases are mapped to the canonical tag when found (in AI output, old data or user entry). The user can still add free tags by hand in the app.",
+  "maxTagsPerRecipe": 5,
+  "groups": [
+    {
+      "name": "Time and effort",
+      "tags": [
+        { "tag": "quick", "meaning": "Ready in under 30 minutes" },
+        { "tag": "weeknight", "meaning": "Simple enough for a normal weekday evening" },
+        { "tag": "easy", "meaning": "Few steps, no special skills" },
+        { "tag": "project", "meaning": "Long or involved; plan ahead" }
+      ]
+    },
+    {
+      "name": "Method",
+      "tags": [
+        { "tag": "one-pot", "meaning": "Cooked in one pot or one pan", "aliases": ["one-pan", "one-skillet", "one-wok"] },
+        { "tag": "traybake", "meaning": "Cooked on one tray in the oven", "aliases": ["sheet-pan", "one-tray"] },
+        { "tag": "stir-fry", "meaning": "Stir-fried", "aliases": ["stir-fried", "wok"] },
+        { "tag": "slow-cooker", "meaning": "Made in a slow cooker", "aliases": ["slow-cooked"] },
+        { "tag": "pressure-cooker", "meaning": "Made in a pressure cooker or Instant Pot", "aliases": ["instant-pot"] },
+        { "tag": "air-fryer", "meaning": "Made in an air fryer" },
+        { "tag": "bbq", "meaning": "Barbecue or grill", "aliases": ["barbecue", "grilled"] },
+        { "tag": "no-cook", "meaning": "No cooking required" },
+        { "tag": "deep-fried", "meaning": "Deep-fried", "aliases": ["double-fried"] }
+      ]
+    },
+    {
+      "name": "Planning",
+      "tags": [
+        { "tag": "make-ahead", "meaning": "Can be made in advance" },
+        { "tag": "freezable", "meaning": "Freezes well", "aliases": ["freezer-friendly"] },
+        { "tag": "batch-cook", "meaning": "Good for cooking in quantity" },
+        { "tag": "leftovers", "meaning": "Uses up leftovers", "aliases": ["leftover-rice"] },
+        { "tag": "store-cupboard", "meaning": "Mostly store-cupboard ingredients", "aliases": ["pantry"] },
+        { "tag": "lunchbox", "meaning": "Packs well for lunch", "aliases": ["meal-prep"] }
+      ]
+    },
+    {
+      "name": "Diet",
+      "tags": [
+        { "tag": "vegan", "meaning": "No animal products at all", "aliases": ["plant-based", "vegan-friendly"] },
+        { "tag": "veggie-option", "meaning": "Not vegetarian as written but easily made so", "aliases": ["vegan-adaptable", "tofu-option"] },
+        { "tag": "gluten-free", "meaning": "Gluten-free as written" },
+        { "tag": "low-fat", "meaning": "Low in fat" },
+        { "tag": "high-protein", "meaning": "High in protein" }
+      ]
+    },
+    {
+      "name": "Occasion",
+      "tags": [
+        { "tag": "party-food", "meaning": "Finger food or for a crowd", "aliases": ["finger-food", "game-day"] },
+        { "tag": "entertaining", "meaning": "Good for guests" },
+        { "tag": "special-occasion", "meaning": "Celebrations and holidays" },
+        { "tag": "comfort-food", "meaning": "Warming and hearty" },
+        { "tag": "street-food", "meaning": "Street-food style" },
+        { "tag": "fusion", "meaning": "Mixes cuisines", "aliases": ["korean-fusion"] }
+      ]
+    },
+    {
+      "name": "Season and flavour",
+      "tags": [
+        { "tag": "summer", "meaning": "Best in summer" },
+        { "tag": "winter", "meaning": "Best in winter" },
+        { "tag": "spicy", "meaning": "Noticeably hot" },
+        { "tag": "mild", "meaning": "Little or no heat" }
+      ]
+    }
+  ]
+}

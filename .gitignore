@@ -1,0 +1,60 @@
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+*.xcuserstate
+*.xcuserdatad/
+DerivedData/
+.swiftpm/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+.build/
+xcuserdata/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sensitive Data
+*.enex
+secrets.py
+config.local.py
+
+# PocketBase
+pb_data/
+pocketbase
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Legacy working data (preserved locally)
+Backend/
+
+# Local app bundles
+dist/
+
+# Local builds, test libraries and scratch work
+working/

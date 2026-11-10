@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "notes": "Fixed category list for the AI catalogue and the app. A recipe may have several categories. A child category implies its parent group (a Korean recipe also appears under Asian); store only the child, the app adds the parent when browsing and searching. Edit names here only; keep the ids stable. A group id may itself be used when a recipe belongs to the group but none of its children (for example a Sri Lankan curry is just 'asian'). Do not add more countries to the list.",
+  "sections": [
+    {
+      "id": "cuisine",
+      "name": "Cuisine",
+      "categories": [
+        {
+          "id": "asian",
+          "name": "Asian",
+          "isGroup": true,
+          "children": [
+            {
+              "id": "korean",
+              "name": "Korean"
+            },
+            {
+              "id": "japanese",
+              "name": "Japanese"
+            },
+            {
+              "id": "chinese",
+              "name": "Chinese"
+            },
+            {
+              "id": "thai",
+              "name": "Thai"
+            },
+            {
+              "id": "vietnamese",
+              "name": "Vietnamese"
+            },
+            {
+              "id": "indian",
+              "name": "Indian"
+            }
+          ]
+        },
+        {
+          "id": "mexican",
+          "name": "Mexican"
+        },
+        {
+          "id": "italian",
+          "name": "Italian"
+        },
+        {
+          "id": "french",
+          "name": "French"
+        },
+        {
+          "id": "spanish-portuguese",
+          "name": "Spanish and Portuguese"
+        },
+        {
+          "id": "greek",
+          "name": "Greek"
+        },
+        {
+          "id": "middle-eastern",
+          "name": "Middle Eastern"
+        },
+        {
+          "id": "north-african",
+          "name": "North African"
+        },
+        {
+          "id": "caribbean",
+          "name": "Caribbean"
+        },
+        {
+          "id": "latin-american",
+          "name": "Latin American"
+        },
+        {
+          "id": "british",
+          "name": "British"
+        }
+      ]
+    },
+    {
+      "id": "main-ingredient",
+      "name": "Main ingredient",
+      "categories": [
+        {
+          "id": "fish",
+          "name": "Fish"
+        },
+        {
+          "id": "meat",
+          "name": "Meat"
+        },
+        {
+          "id": "vegetarian",
+          "name": "Vegetarian"
+        }
+      ]
+    },
+    {
+      "id": "dish-type",
+      "name": "Type of dish",
+      "categories": [
+        {
+          "id": "breakfast-brunch",
+          "name": "Breakfast and brunch"
+        },
+        {
+          "id": "lunches-light-meals",
+          "name": "Lunches and light meals"
+        },
+        {
+          "id": "starters-snacks",
+          "name": "Starters and snacks"
+        },
+        {
+          "id": "soups",
+          "name": "Soups"
+        },
+        {
+          "id": "salads",
+          "name": "Salads"
+        },
+        {
+          "id": "main-dishes",
+          "name": "Main dishes"
+        },
+        {
+          "id": "pasta-noodles",
+          "name": "Pasta and noodles"
+        },
+        {
+          "id": "rice-grains",
+          "name": "Rice and grains"
+        },
+        {
+          "id": "curries-stews",
+          "name": "Curries and stews"
+        },
+        {
+          "id": "sides",
+          "name": "Sides"
+        },
+        {
+          "id": "bread-baking",
+          "name": "Bread and baking"
+        },
+        {
+          "id": "desserts",
+          "name": "Desserts"
+        },
+        {
+          "id": "sauces-dips-condiments",
+          "name": "Sauces, dips and condiments"
+        },
+        {
+          "id": "ferments-pickles",
+          "name": "Ferments and pickles"
+        },
+        {
+          "id": "jams-chutneys",
+          "name": "Jams and chutneys"
+        },
+        {
+          "id": "drinks",
+          "name": "Drinks"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "categories": [
+        {
+          "id": "notes-logs",
+          "name": "Notes and logs"
+        }
+      ]
+    }
+  ]
+}

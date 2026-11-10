@@ -1,0 +1,3 @@
+// swift-tools-version: 5.9
+import PackageDescription
+let package = Package(name: "RecipeApp", platforms: [.macOS(.v13), .iOS(.v15)], products: [.library(name: "RecipeCore", targets: ["RecipeCore"]), .executable(name: "RecipeApp", targets: ["RecipeMac"])], targets: [.target(name: "RecipeCore", resources: [.process("Resources")]), .executableTarget(name: "RecipeMac", dependencies: ["RecipeCore"], exclude: ["Info.plist"], linkerSettings: [.unsafeFlags(["-Xlinker", "-sectcreate", "-Xlinker", "__TEXT", "-Xlinker", "__info_plist", "-Xlinker", "Sources/RecipeMac/Info.plist"], .when(platforms: [.macOS]))]), .testTarget(name: "RecipeCoreTests", dependencies: ["RecipeCore"])])
